@@ -50,6 +50,8 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
 16. The app includes a handy django toolbar (only available in the development environment) that facilitates debugging.
 
+17. The app also includes my favorite settings to develop a Django app on VS Code, and a `launch.json` file to run the server in debugging mode using the integrated debugger in VS Code. Feel free to delete these and the parent `.vscode` folder if you use some other editor.
+
 That's all. Start coding!
 
 ## **Note**
