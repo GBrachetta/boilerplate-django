@@ -1,6 +1,6 @@
 db.sqlite3
 .venv
-# main
+main
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -108,7 +108,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-# .env
+.env
 .venv
 env/
 venv/
@@ -141,5 +141,5 @@ dmypy.json
 cython_debug/
 
 # VSCode settings
-# .vscode
+.vscode
 boilerplate/.env
