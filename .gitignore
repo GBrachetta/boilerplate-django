@@ -141,7 +141,13 @@ dmypy.json
 cython_debug/
 
 # VSCode settings
+
+# Env & Dep ex pipenv
 .vscode
 boilerplate/.env
 boilerplate/settings/development.py
 requirements.txt
+
+# Media and Static (if to be served from AWS)
+media
+static
