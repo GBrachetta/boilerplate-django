@@ -30,17 +30,19 @@ This app is a boilerplate with ready-to-go settings for a new Django app.
 
 10. Create a local repository with `git init`. The `.gitignore` file provided is ready to ignore all the commonly ignored files.
 
-11. Settings are divided in the module `settings/environments`. Edit these for the different environments or `settings/components/base.py` for settings common to both development and production.
+11. Run `python manage.py migrate` to initialize the database with the proprietary Django models.
 
-12. The `.env` file provided (`your-app-name/settings/.env`) should include your environment variables. Change `DJANGO_ENV` to either `development` or `production` for the corresponding settings to load.
+12. Settings are divided in the module `settings/environments`. Edit these for the different environments or `settings/components/base.py` for settings common to both development and production.
 
-13. Add eventual new settings in the following files:
+13. The `.env` file provided (`your-app-name/settings/.env`) should include your environment variables. Change `DJANGO_ENV` to either `development` or `production` for the corresponding settings to load.
+
+14. Add eventual new settings in the following files:
 
     1. `your-app-name/settings/components/common.py` for settings common to both development and production
     2. `your-app-name/settings/environments/development.py` for settings used during development.
     3. `your-app-name/settings/environments/production.py` for settings used for production.
 
-14. The app includes a handy django toolbar (only available in the development environment) that facilitates debugging.
+15. The app includes a handy django toolbar (only available in the development environment) that facilitates debugging.
 
 That's all. Start coding!
 
