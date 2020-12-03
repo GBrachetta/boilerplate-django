@@ -10,6 +10,7 @@ ALLOWED_HOSTS = [
 ]
 
 INSTALLED_APPS += [
+    "main",
     "debug_toolbar",
     "mail_panel",
 ]
