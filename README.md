@@ -3,6 +3,10 @@
 
 This app is a boilerplate with ready-to-go settings for a new Django app.
 
+It assumes using AWS to store static files, and the production variables have been added accordingly (but they only load in case there's a `USE_AWS=True` variable in the environment).
+
+It also assumes deploying in Heroku to make use of their database, but that can be easily changed to any other database set of variables in `your-app-name/settings/environments/production.py`.
+
 ## Steps to get started
 
 1. Download this repository to your computer, and unzip it.
