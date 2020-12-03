@@ -144,3 +144,4 @@ cython_debug/
 .vscode
 boilerplate/.env
 boilerplate/settings/development.py
+requirements.txt
