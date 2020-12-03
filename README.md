@@ -17,7 +17,7 @@ This app is a boilerplate with ready-to-go settings for a new Django app.
 
     `python manage.py rename your-app-name`
 
-5. Delete the app `main` used to rename the boilerplate, and remove it from the installed apps.
+5. Delete the folder `main`, which contains the now obsolete script used to rename the project.
 
 6. Create the relevant environment variables in the `.env` file provided.
 

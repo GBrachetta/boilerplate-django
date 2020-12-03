@@ -20,7 +20,7 @@ class Command(BaseCommand):
             "boilerplate/settings/environments/development.py",
             "boilerplate/settings/environments/production.py",
             "manage.py",
-            ".gitignore"
+            ".gitignore",
         ]
         folder_to_rename = "boilerplate"
 
@@ -32,6 +32,16 @@ class Command(BaseCommand):
 
             with open(f, "w") as file:
                 file.write(filedata)
+
+        delete_main_from = "boilerplate/settings/components/common.py"
+
+        with open(delete_main_from, "r") as main:
+            main_delete = main.read()
+
+        main_delete = main_delete.replace('    "main",', "")
+
+        with open(delete_main_from, "w") as main:
+            main.write(main_delete)
 
         os.rename(folder_to_rename, new_project_name)
 
