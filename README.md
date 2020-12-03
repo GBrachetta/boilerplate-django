@@ -5,7 +5,7 @@ This app is a boilerplate with ready-to-go settings for a new Django app.
 
 It assumes using AWS to store static files, and the production variables have been added accordingly (but they only load in case there's a `USE_AWS=True` variable in the environment).
 
-It also assumes deploying in Heroku to make use of their database, but that can be easily changed to any other database set of variables in `your-app-name/settings/environments/production.py`.
+It also assumes deploying in Heroku to make use of their database, but that can be easily changed to any other database set of variables in `your-app-name/settings/production.py`.
 
 ## Steps to get started
 
@@ -38,15 +38,15 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
 12. Run `python manage.py migrate` to initialize the database with the proprietary Django models.
 
-13. Settings are divided in the module `settings/environments`. Edit these for the different environments or `settings/components/base.py` for settings common to both development and production.
+13. Settings are divided in the module `settings/`. Edit these for the different environments or `settings/common.py` for settings common to both development and production.
 
 14. The `.env` file provided (`your-app-name/settings/.env`) should include your environment variables. Change `DJANGO_ENV` to either `development` or `production` for the corresponding settings to load.
 
 15. Add eventual new settings in the following files:
 
-    1. `your-app-name/settings/components/common.py` for settings common to both development and production
-    2. `your-app-name/settings/environments/development.py` for settings used during development.
-    3. `your-app-name/settings/environments/production.py` for settings used for production.
+    1. `your-app-name/settings/common.py` for settings common to both development and production
+    2. `your-app-name/settings/development.py` for settings used during development.
+    3. `your-app-name/settings/production.py` for settings used for production.
 
 16. The app includes a handy django toolbar (only available in the development environment) that facilitates debugging.
 

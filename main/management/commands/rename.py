@@ -16,9 +16,9 @@ class Command(BaseCommand):
         files_to_rename = [
             "boilerplate/wsgi.py",
             "boilerplate/asgi.py",
-            "boilerplate/settings/components/common.py",
-            "boilerplate/settings/environments/development.py",
-            "boilerplate/settings/environments/production.py",
+            "boilerplate/settings/common.py",
+            "boilerplate/settings/development.py",
+            "boilerplate/settings/production.py",
             "manage.py",
             ".gitignore",
         ]
@@ -33,7 +33,7 @@ class Command(BaseCommand):
             with open(f, "w") as file:
                 file.write(filedata)
 
-        delete_main_from = "boilerplate/settings/components/common.py"
+        delete_main_from = "boilerplate/settings/common.py"
 
         with open(delete_main_from, "r") as main:
             main_delete = main.read()

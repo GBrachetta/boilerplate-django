@@ -143,4 +143,4 @@ cython_debug/
 # VSCode settings
 .vscode
 boilerplate/.env
-boilerplate/settings/environments/development.py
+# boilerplate/settings/development.py

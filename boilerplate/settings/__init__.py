@@ -14,16 +14,16 @@ from split_settings.tools import include, optional
 ENV = environ.get('DJANGO_ENV') or 'development'
 
 base_settings = [
-    'components/common.py',  # standard django settings
-    'components/database.py',  # postgres
+    'common.py',  # standard django settings
+    # 'database.py',  # postgres
 
     # You can even use glob:
-    # 'components/*.py'
+    # '*.py'
 
     # Select the right env:
-    'environments/{0}.py'.format(ENV),
+    '{0}.py'.format(ENV),
     # Optionally override some settings:
-    optional('environments/local.py'),
+    optional('local.py'),
 ]
 
 # Include settings:

@@ -1,5 +1,5 @@
 import os
-from boilerplate.settings.components.common import INSTALLED_APPS, MIDDLEWARE
+from boilerplate.settings.common import INSTALLED_APPS, MIDDLEWARE
 
 DEBUG = True
 
