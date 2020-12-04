@@ -1,6 +1,6 @@
 db.sqlite3
 .venv
-main
+delete-me-after-rename
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
