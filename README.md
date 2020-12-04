@@ -26,11 +26,9 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
 7. If you prefer to manage your virtual environment without pipenv, you can install the requirements in your virtual environment by making use of the `requirements.txt` file provided by running `pip install -r requirements.txt`.
 
-8. Change the name of the app to one of your liking by running
+8. Change the name of the project to one of your liking by running
 
-    `python manage.py rename current-app-name new-app-name`
-
-    > (takes two arguments)
+    `python manage.py rename <current-project-name> <new-project-name>`
 
 9. Run (if necessary) `python manage.py collectstatic`.
 
