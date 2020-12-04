@@ -31,9 +31,9 @@ That's all. Happy coding!
 
 - New settings go in the following files:
 
-    1. `your-app-name/settings/common.py` for settings common to both development and production
-    2. `your-app-name/settings/development.py` for settings used during development.
-    3. `your-app-name/settings/production.py` for settings used for production.
+  - `your-app-name/settings/common.py` for settings common to both development and production
+  - `your-app-name/settings/development.py` for settings used during development.
+  - `your-app-name/settings/production.py` for settings used for production.
 
 - The app includes a handy django toolbar (only available in the development environment) that facilitates debugging.
 
@@ -41,12 +41,12 @@ That's all. Happy coding!
 
 - An additional command has been added, `$ python manage.py makesuper` that creates a superuser in one line:
 
-    1. Username: admin
-    2. Password: admin
-    3. Email: admin@domain.com
+  - Username: admin
+  - Password: admin
+  - Email: admin@domain.com
 
-- If you're using VSCode's debug functionality *and* Pipenv, be aware that there's currently an issue and the request for the creation of the shell and the command to start the debugger are timed badly.
+- If you're using VSCode's debug functionality ***and*** Pipenv, be aware that there's currently an issue and the request for the creation of the shell and the command to start the debugger are timed badly.
 
   To avoid issues, install all dependencies from the Pipfile as described in point 3 and once the environment has all dependencies installed, momentarily rename your Pipfile (for example adding a dash before the name) so pipenv won't attempt to create a new shell while the debugger is invoked.
 
-    > Make sure to rename back Pipfile before installing new dependencies for a correct deployment.
+  **Make sure to rename back Pipfile before installing new dependencies for a correct deployment.**
