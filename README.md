@@ -30,7 +30,7 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
     `python manage.py rename your-desired-app-name`
 
-9. Delete the folder `main`, which contains the now obsolete script used to rename the project.
+9. Delete the folder `delete-me-after-rename`, which contains the now obsolete script used to rename the project.
 
 10. Run (if necessary) `python manage.py collectstatic`.
 

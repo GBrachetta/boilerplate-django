@@ -38,7 +38,7 @@ class Command(BaseCommand):
         with open(delete_main_from, "r") as main:
             main_delete = main.read()
 
-        main_delete = main_delete.replace('    "main",', "")
+        main_delete = main_delete.replace('    "delete-me-after-rename",', "")
 
         with open(delete_main_from, "w") as main:
             main.write(main_delete)
