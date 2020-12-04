@@ -45,6 +45,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                "Project has been renamed to %s" % new_project_name
+                "Success: Your project has been renamed to %s"
+                % new_project_name
             )
         )
