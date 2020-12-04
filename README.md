@@ -52,6 +52,12 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
 16. The app also includes my favorite settings to develop a Django app on VS Code, and a `launch.json` file to run the server in debugging mode using the integrated debugger in VS Code. Feel free to delete these and the parent `.vscode` folder if you use some other editor.
 
+17. An additional command has been added, `python manage.py makesuper` that creates a superuser in one line:
+
+    1. Username: admin
+    2. Password: admin
+    3. Email: admin@domain.com
+
 That's all. Start coding!
 
 ## **Note**
