@@ -11,11 +11,9 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
 1. Download this repository to your computer and open it with your editor.
 
-   The app contains a Pipfile, so a virtual shell will be automatically started if you have [pipenv](https://pipenv.pypa.io/en/latest/) installed.
+   The app contains a Pipfile, so a virtual shell will be automatically started if you have [pipenv](https://pipenv.pypa.io/en/latest/) installed, otherwise create your virtual environment with the manager of your preference.
 
-2. Install the requirements from `Pipfile` with `$ pipenv install` and `$ pipenv install --dev`
-
-   If you prefer not to use pipenv, install the requirements with `pip install -r requirements.txt`.
+2. Install the requirements from `Pipfile` with `$ pipenv install` and `$ pipenv install --dev` if using Pipenv, otherwise with `pip install -r requirements.txt`.
 
 3. You can change the name of the project to one of your liking by running
 
@@ -29,7 +27,7 @@ That's all. Happy coding!
 
 - The `.gitignore` file provided is ready to ignore all the commonly ignored files so if you create a local repository (`$ git init`) it will take care of ignoring sensitive information.
 
-- The `.env` file provided (`your-app-name/settings/.env`) should include your environment variables. Change `DJANGO_ENV` to either `development` or `production` for the corresponding settings to load (default is 'development').
+- The `.env` file provided (`your-app-name/settings/.env`) is the place to include your environment variables. Change `DJANGO_ENV` to either `development` or `production` for the corresponding settings to load (default is 'development').
 
 - New settings go in the following files:
 
