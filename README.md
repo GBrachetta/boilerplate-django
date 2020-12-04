@@ -13,13 +13,13 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
    The app contains a Pipfile, so a virtual shell will be automatically started if you have [pipenv](https://pipenv.pypa.io/en/latest/) installed, otherwise create your virtual environment with the manager of your preference.
 
-2. Install the requirements from `Pipfile` with `$ pipenv install` and `$ pipenv install --dev` if using Pipenv, otherwise with `pip install -r requirements.txt`.
+2. Install the requirements with `$ pipenv install` and `$ pipenv install --dev` if using Pipenv, otherwise with `$ pip install -r requirements.txt`.
 
 3. You can change the name of the project to one of your liking by running
 
-    `python manage.py rename <current-project-name> <new-project-name>`
+    `$ python manage.py rename <current-project-name> <new-project-name>`
 
-4. Apply migrations with `python manage.py migrate` to initialize the database with the proprietary Django models.
+4. Apply migrations with `$ python manage.py migrate` to initialize the database with the proprietary Django models.
 
 That's all. Happy coding!
 
@@ -39,7 +39,7 @@ That's all. Happy coding!
 
 - The app also includes my favorite settings to develop a Django app on VS Code, and a `launch.json` file to run the server in debugging mode using the integrated debugger in VS Code. Feel free to delete these and the parent `.vscode` folder if you use some other editor.
 
-- An additional command has been added, `python manage.py makesuper` that creates a superuser in one line:
+- An additional command has been added, `$ python manage.py makesuper` that creates a superuser in one line:
 
     1. Username: admin
     2. Password: admin
