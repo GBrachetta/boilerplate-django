@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY")  # Add in .env
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "core",
+    # Add here your new common apps for both dev and prod
 ]
 
 MIDDLEWARE = [
@@ -66,7 +67,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = "en-us"
-TIME_ZONE = "Europe/Amsterdam"
+TIME_ZONE = "Europe/Amsterdam"  # Change to your time zone
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True

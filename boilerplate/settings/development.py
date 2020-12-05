@@ -1,10 +1,11 @@
 import os
+# Import below from the common config as needed, and append to the list (+=)
 from boilerplate.settings.common import INSTALLED_APPS, MIDDLEWARE
 
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    os.environ.get("DOMAIN_NAME"),
+    os.environ.get("DOMAIN_NAME"),  # Add in .env
     "localhost",
     "127.0.0.1",
 ]
@@ -12,6 +13,7 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS += [
     "debug_toolbar",
     "mail_panel",
+    # Add here your new apps for dev only
 ]
 
 MIDDLEWARE.insert(
@@ -27,7 +29,7 @@ DATABASES = {
 }
 
 EMAIL_BACKEND = "mail_panel.backend.MailToolbarBackend"
-DEFAULT_FROM_EMAIL = "youremail@mail.com"
+DEFAULT_FROM_EMAIL = "admin@mail.com"
 
 DEBUG_TOOLBAR_PANELS = [
     "ddt_request_history.panels.request_history.RequestHistoryPanel",
@@ -48,4 +50,4 @@ DEBUG_TOOLBAR_PANELS = [
     "debug_toolbar.panels.profiling.ProfilingPanel",
 ]
 
-INTERNAL_IPS = ["127.0.0.1", "localhost"]
+INTERNAL_IPS = ["127.0.0.1", "localhost"]  # For debug-toolbar
