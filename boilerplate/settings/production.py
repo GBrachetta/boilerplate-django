@@ -1,9 +1,14 @@
 import os
 import dj_database_url
+import boilerplate.settings.common as common_settings
 
 DEBUG = False
 
 ALLOWED_HOSTS = os.environ.get("DOMAIN_NAME")
+
+common_settings.INSTALLED_APPS += [
+    "storages",
+]
 
 DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
