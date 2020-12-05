@@ -8,6 +8,8 @@ django = "*"
 dj-database-url = "*"
 python-dotenv = "*"
 django-split-settings = "*"
+django-storages = "*"
+boto3 = "*"
 
 [dev-packages]
 pylint-django = "*"
