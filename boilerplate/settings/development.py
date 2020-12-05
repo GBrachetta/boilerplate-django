@@ -1,5 +1,5 @@
 import os
-import boilerplate.settings.common as common_settings
+from boilerplate.settings.common import INSTALLED_APPS, MIDDLEWARE
 
 DEBUG = True
 
@@ -9,12 +9,12 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
-common_settings.INSTALLED_APPS += [
+INSTALLED_APPS += [
     "debug_toolbar",
     "mail_panel",
 ]
 
-common_settings.MIDDLEWARE.insert(
+MIDDLEWARE.insert(
     0,
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 )
