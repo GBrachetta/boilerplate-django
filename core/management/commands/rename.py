@@ -30,6 +30,7 @@ class Command(BaseCommand):
             f"{current_project_name}/asgi.py",
             "manage.py",
             ".gitignore",
+            "Procfile",
         ]
 
         for f in files_to_rename:
