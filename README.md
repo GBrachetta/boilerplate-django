@@ -44,9 +44,3 @@ That's all. Happy coding!
   - Username: admin
   - Password: admin
   - Email: admin@domain.com
-
-- If you're using VSCode's debug functionality ***and*** Pipenv, be aware that there's currently an issue and the request for the creation of the shell and the command to start the debugger are timed badly.
-
-  To avoid issues, install all dependencies from the Pipfile as described in point 3 and once the environment has all dependencies installed, momentarily rename your Pipfile (for example adding a dash before the name) so pipenv won't attempt to create a new shell while the debugger is invoked.
-
-  **Make sure to rename back Pipfile before installing new dependencies for a correct deployment.**
