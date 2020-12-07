@@ -1,6 +1,8 @@
 
 # Django Boilerplate
 
+![image](https://res.cloudinary.com/gbrachetta/image/upload/v1607301400/oob_bfglzw.jpg)
+
 This app is a boilerplate with ready-to-go settings for a new Django app.
 
 It assumes using AWS to store static files, and the production variables have been added accordingly (but they only load in case there's a `USE_AWS=True` variable in the environment).
