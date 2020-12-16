@@ -23,6 +23,8 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
 4. Apply migrations with `$ python manage.py migrate` to initialize the database with the proprietary Django models.
 
+5. Run the server with `$ python manage.py runserver`.
+
 That's all. Happy coding!
 
 ## Notes
