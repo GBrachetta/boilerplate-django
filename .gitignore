@@ -148,4 +148,4 @@ boilerplate/settings/development.py
 
 # Media and Static (if to be served from AWS)
 media
-# static
+static
