@@ -28,6 +28,7 @@ class Command(BaseCommand):
             f"{current_project_name}/settings/production.py",
             f"{current_project_name}/wsgi.py",
             f"{current_project_name}/asgi.py",
+            ".vscode/settings.json",
             "manage.py",
             ".gitignore",
             "Procfile",

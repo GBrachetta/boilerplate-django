@@ -48,7 +48,8 @@
         "--disable=W0222", // Signature differs from %s method
         "--disable=imported-auth-user",
         "--disable=invalid-name", // For variables < 3 chars
-        "--disable=line-too-long"
+        "--disable=line-too-long",
+        "--django-settings-module=boilerplate.settings"
     ],
     "python.terminal.activateEnvironment": true,
     "python.testing.nosetestArgs": [
