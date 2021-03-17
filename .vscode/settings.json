@@ -4,7 +4,10 @@
         "--line-length=79"
     ],
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     },
     "emmet.includeLanguages": {
         "django-html": "html",
@@ -74,5 +77,8 @@
     "vsintellicode.python.completionsEnabled": true,
     "python.linting.flake8Args": [
         "--ignore=E501",
+    ],
+    "python.sortImports.args": [
+        "--profile=black"
     ]
 }

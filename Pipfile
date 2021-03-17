@@ -22,6 +22,7 @@ autopep8 = "*"
 flake8 = "*"
 django-debug-toolbar-request-history = "*"
 django-mail-panel = "*"
+isort = "*"
 
 [requires]
 python_version = "3"
