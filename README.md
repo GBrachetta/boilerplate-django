@@ -21,6 +21,8 @@ It also assumes deploying in Heroku to make use of their database, but that can 
 
     `$ python manage.py rename <current-project-name> <new-project-name>`
 
+    > **Don't rename your project once you've started adding apps. The rename script looks for boilerplate files only in order to rename them. Once you renamed your project and started developing, stick to that name!**
+
 4. Apply migrations with `$ python manage.py migrate` to initialize the database with the proprietary Django models.
 
 5. Run the server with `$ python manage.py runserver`.
