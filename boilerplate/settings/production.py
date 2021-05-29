@@ -1,11 +1,13 @@
 import os
+
 import dj_database_url
+
 # Import below from the common config as needed, and append to the list (+=)
 from boilerplate.settings.common import INSTALLED_APPS
 
 DEBUG = False
 
-ALLOWED_HOSTS = os.environ.get("DOMAIN_NAME")
+ALLOWED_HOSTS = [os.environ.get("DOMAIN_NAME")]
 
 INSTALLED_APPS += [
     # Add here your new apps for prod only
