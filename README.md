@@ -41,6 +41,8 @@ That's all. Happy coding!
   - `your-app-name/settings/development.py` for settings used during development.
   - `your-app-name/settings/production.py` for settings used for production.
 
+- **Read the comments in `<your_project>/settings/production.py` for the env variables to add to your production server!**
+
 - The app includes a handy django toolbar (only available in the development environment) that facilitates debugging.
 
 - The app also includes my favorite settings to develop a Django app on VS Code, and a `launch.json` file to run the server in debugging mode using the integrated debugger in VS Code. Feel free to delete these and the parent `.vscode` folder if you use some other editor.
